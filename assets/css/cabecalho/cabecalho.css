@@ -1,0 +1,64 @@
+:root{
+    --branco: #ffffff;
+}
+
+.webHeader{
+    display: flex;
+    background-color: var(--branco);
+    justify-content: space-between;
+    margin: 0;
+    height: 5em;
+}
+
+.container__imagem{
+    padding: 1em;
+}
+
+/*Logo ocultado para mobile*/
+.webHeader_logologo{
+    display: none;
+}
+
+.webHeader_Menu{
+    margin-right: auto;
+    padding: 20px;
+}
+
+.webHeader__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/img/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.webHeader_logologo{
+    width: 10em;
+}
+
+.webIcons{
+    display: flex;
+    flex-direction: row;
+}
+
+.webIcons_a{
+    justify-content: space-between;
+    margin: auto;
+    padding: 5px;
+    align-items: center;
+}
+
+.webIcons_img{
+    width: 2.5em;
+}
+
+
+/*Evento de quando clicado no botão, aparece a lista*/
+
+.webHeader_ul{
+    display: none;
+}
+
+.webHeader_input:checked~.webHeader_ul{
+    display: block;
+}

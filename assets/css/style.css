@@ -1,0 +1,16 @@
+@import url(./cabecalho/cabecalho.css);
+
+:root{
+    --fonte-principal: 'Instrument Sans', sans-serif;
+    --branco: #ffffff;
+}
+
+.webSubstance{
+    background: #c6c6c6;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+}
+
