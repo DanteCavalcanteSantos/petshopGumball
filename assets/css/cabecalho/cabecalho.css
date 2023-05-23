@@ -1,5 +1,6 @@
 :root{
     --branco: #ffffff;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%)
 }
 
 .webHeader{
@@ -53,12 +54,27 @@
 }
 
 
-/*Evento de quando clicado no botão, aparece a lista*/
+
 
 .webHeader_ul{
     display: none;
 }
 
+.webHeader_input{
+    display: none;
+}
+
+
+.webHeader_input:checked~.webHeader_label{
+    background: var(--azul-degrade);
+    background-repeat: no-repeat;
+} 
+
+
+/*Evento de quando clicado no botão, aparece a lista*/
+
 .webHeader_input:checked~.webHeader_ul{
     display: block;
+    appearance: none;
 }
+

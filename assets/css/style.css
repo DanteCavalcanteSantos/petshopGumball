@@ -1,8 +1,11 @@
 @import url(./cabecalho/cabecalho.css);
+@import url(./main/conteudo.css);
+
 
 :root{
     --fonte-principal: 'Instrument Sans', sans-serif;
     --branco: #ffffff;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%)
 }
 
 .webSubstance{

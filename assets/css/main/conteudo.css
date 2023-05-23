@@ -1,0 +1,18 @@
+
+.title{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    align-items: center;
+}
+
+.maintitle{
+    color: var(--branco);
+    font-size: 2.5em;
+}
+
+.maintitle_line{
+    color: var(--branco);
+    font-size: 1.5em;
+}
