@@ -1,6 +1,7 @@
 :root{
     --branco: #ffffff;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%)
+    --fonte-principal: 'Instrument Sans', sans-serif;
 }
 
 .webHeader{
@@ -10,6 +11,7 @@
     margin: 0;
     height: 5em;
 }
+
 
 .container__imagem{
     padding: 1em;
@@ -23,16 +25,29 @@
 .webHeader_Menu{
     margin-right: auto;
     padding: 20px;
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 .webHeader__menu-hamburguer{
     width: 24px;
     height: 24px;
-    background-image: url(/assets/img/menu.svg);
+    background-image: url(/assets/img/Menu.svg);
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
 }
+
+.webHeader_input:checked~.webHeader_label>.webHeader__menu-hamburguer{
+    background-image: url(/assets/img/menu_aberto.svg);
+}
+
+.webHeader_input:checked~.webHeader_label{
+    background: var(--azul-degrade);
+} 
+
+
 .webHeader_logologo{
     width: 10em;
 }
@@ -54,27 +69,37 @@
 }
 
 
-
-
 .webHeader_ul{
+    position: absolute;
+    top: 5em;
+    left: 0em;
     display: none;
+    background-color: var(--branco);
+    z-index: 2;
 }
 
 .webHeader_input{
     display: none;
 }
 
-
-.webHeader_input:checked~.webHeader_label{
-    background: var(--azul-degrade);
-    background-repeat: no-repeat;
-} 
-
-
 /*Evento de quando clicado no botão, aparece a lista*/
 
 .webHeader_input:checked~.webHeader_ul{
     display: block;
-    appearance: none;
 }
 
+.webHeader_li{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.webHeader_a{
+    background-clip: text;
+    background: var(--azul-degrade);
+    color: #0b026e;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
