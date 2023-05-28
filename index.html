@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />   
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Petshop Gumball</title>
 </head>
@@ -32,6 +33,9 @@
                         <a href="#" class="webHeader_a">Veterinários</a>
                     </li>
                     <li class="webHeader_li">
+                        <a href="#" class="webHeader_a">Demais Animais</a>
+                    </li>
+                    <li class="webHeader_li">
                         <a href="#" class="webHeader_a">Hotel e estadias</a>
                     </li>
              </ul> 
@@ -53,15 +57,77 @@
                 <h1 class="maintitle">PetShop Gumball</h1>
                 <p class="maintitle_line">Amor pelo seu bichano!</p>
             </div>
-            <section class="banner-section">
-                <img src="/assets/img/Banners/dogneio_1.jpg" alt="Cachorro da raça chowchow" class="banner-image">
-                <img src="/assets/img/Banners/Gatinho_1.jpg" alt="Gato preto pronto para atacar" class="banner-image">
-                <img src="/assets/img/Banners/dogneio_2.jpg" alt="Cachorrinho filhote" class="banner-image">
-                <img src="/assets/img/Banners/Gatinho_2.jpg" alt="Gatinho brincando com flor" class="banner-image">
-                <img src="/assets/img/Banners/dogneio_3.jpg" alt="Cachorro da raça labrador" class="banner-image">
-                <img src="/assets/img/Banners/Gatinho_3.jpg" alt="Gatinho sentado" class="banner-image"></section>
+            <section class="carrossel">
+                        <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="/assets/img/Banners/dogneio_1.jpg" class="banner_img" alt="Cachorro da raça chow chow" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/Banners/Gatinho_1.jpg" class="banner_img" alt="Gatinho preto pronto para atacar">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/img/Banners/dogneio_2.jpg" class="banner_img" alt="Cachorrinho filhote">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/Banners/Gatinho_2.jpg" class="banner_img" alt="Gato filhote brincando com flor">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/Banners/Gatinho_3.jpg" class="banner_img" alt="Gatinho sentado">
+                    </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
+                     <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      
+                    <!-- If we need scrollbar -->
+                    <!--<div class="swiper-scrollbar"></div>-->
+                </div>  
+            </section>
+            <section class="infoGumball">
+                <div class="infoGumball_div">
+                    <div class="infoGumball__title1">
+                        <h2 class="infoGumball_title">Descubra o mundo dos animais de estimação no Petshop Gumball!!</h2>
+                    </div>
+                    <div class="infoGumball_div">
+                        <img src="assets/img/infoGumball/gatinhoEdonaHappy.jpg" alt="Gatinho e dona felizes" class="infoGumball_img">
+                            <p class="infoGumball_tex">Nossa equipe de veterinários altamente qualificados está pronta para oferecer cuidados de saúde excepcionais aos seus animais. Realizamos exames de rotina, vacinações, tratamentos médicos e até cirurgias, garantindo que seu pet esteja sempre saudável e feliz.</p>
+                        <img src="assets/img/infoGumball/veterinario.jpg" alt="veterin cuidando do gatinho" class="infoGumball_img">
+                            <p class="infoGumball_tex">No Petshop Gumball, acreditamos que cada pet é uma parte especial da família, e tratamos todos os animais com amor, respeito e dedicação. Venha nos visitar e descubra o incrível mundo de cuidados que temos a oferecer para os seus animais de estimação.</p>
+                            <img src="assets/img/infoGumball/gatoCurioso.jpg" alt="Gatinho olhando para cima" class="infoGumball_img">
+                </div>
+            </div>
+            </section>
+            <section class="infoVideo">
+                <h3 class="infoVideo_title">
+                    Veja estes bichinhos adoraveis aprontando
+                </h3>
+                <div class="infoVideo1">
+                    <iframe class="infoVideo__Video" src="https://www.youtube.com/embed/LLDu2HpAJc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
     </main>
     <script src="/assets/script/script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            //Altera os banners
+            autoplay:{
+                delay: 3000
+            },
+        });
+    </script>
 </body>
 </html>

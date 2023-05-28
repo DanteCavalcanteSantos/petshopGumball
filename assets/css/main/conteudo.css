@@ -1,4 +1,4 @@
-
+/*estilo do titulo*/
 .title{
     display: flex;
     flex-direction: column;
@@ -15,4 +15,87 @@
 .maintitle_line{
     color: var(--branco);
     font-size: 1.5em;
+}
+
+/*Estilo carrossel banner*/
+
+.carrossel{
+    margin: 0;
+    padding: 0;
+}
+
+.banner_img{
+    width: 100%;
+  }
+  
+  .swiper-button-prev, .swiper-button-next{
+    display: none;
+  }
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin: 5px;
+  }
+  
+    .banner-container {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    
+
+    /*Informação página*/
+
+.infoGumball{
+    margin: 1.5em;
+}
+
+.infoGumball__title1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoGumball_title{
+    color: var(--branco);
+    margin: 20px;
+    font-size: 32px;
+}
+
+
+.infoGumball_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoGumball_img{
+    width: 80vw;
+    margin: 30px;
+}
+
+.infoGumball_tex{
+    color: var(--branco);
+    font-size: 20px;
+    margin: 15px;
+}
+
+/*Video*/
+
+
+.infoVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3em;
+}
+
+.infoVideo_title{
+    margin-bottom: 1.5em;
+    font-size: 30px;
+    color: var(--branco);
+}
+
+.infoVideo__Video{
+    width: 80vw;
+    height: 60vw;
 }
