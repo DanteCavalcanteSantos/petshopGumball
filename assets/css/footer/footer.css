@@ -1,0 +1,77 @@
+/* Estilo geral do footer */
+.webFooter {
+    background-color: #c6c6c6;
+    padding: 20px;
+  }
+  
+  /* Estilo do título do footer */
+  .footer_title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2em;
+  }
+  
+  /* Estilo dos dados de contato */
+  .contact_ul {
+    color: white;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact_data:nth-child(1){
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contact_data {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo da seção de newsletter */
+  .footer_newsletter {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .footer_newsletter-title {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #emailData{
+    border-radius: 5px;
+  }
+  
+  label{
+    color: white;
+    font-weight: bold;
+    margin: 5px 5px;
+    font-size: 20px;
+  }
+  #checkBoxTerms{
+    font-size: 5px;
+  }
+
+
+  /* Estilo das mídias sociais */
+  .socialMedias_nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .socialMedias_nav a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .socialMedias_img {
+    width: 40px;
+  }
+  

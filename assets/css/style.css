@@ -1,6 +1,6 @@
 @import url(./cabecalho/cabecalho.css);
 @import url(./main/conteudo.css);
-
+@import url(./footer/footer.css);
 
 :root{
     --fonte-principal: 'Instrument Sans', sans-serif;
