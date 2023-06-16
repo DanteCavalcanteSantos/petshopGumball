@@ -1,3 +1,5 @@
+/* Estilos para smartphones pequenos 480*/
+
 :root{
     --branco: #ffffff;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%)
@@ -17,17 +19,13 @@
     padding: 1em;
 }
 
-/*Logo ocultado para mobile*/
-.webHeader_logologo{
-    display: none;
-}
+
 
 .webHeader_Menu{
     margin-right: auto;
     padding: 20px;
     top: 0;
     left: 0;
-    position: absolute;
 }
 
 .webHeader__menu-hamburguer{
@@ -55,19 +53,18 @@
 .webIcons{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .webIcons_a{
-    justify-content: space-between;
     margin: auto;
     padding: 5px;
-    align-items: center;
+    align-items: end;
 }
 
 .webIcons_img{
     width: 2.5em;
 }
-
 
 .webHeader_ul{
     position: absolute;
@@ -102,4 +99,16 @@
     text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+
+/* Estilos para desktops pequenos */
+@media (min-width: 1024px) and (max-width: 1199px) {
+ 
+}
+
+/* Estilos para desktops médios e grandes */
+@media (min-width: 1200px) {
+
 }

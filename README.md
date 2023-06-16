@@ -19,3 +19,4 @@ JavaScript
  [] Praticar guardar os valores digitados em um Array
 
 
+Notações: Pegar o formulário como base da pasta do Alura -> JavaScript na Web validação de Formulários e Html 5
