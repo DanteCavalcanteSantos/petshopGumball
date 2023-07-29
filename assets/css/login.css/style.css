@@ -1,0 +1,65 @@
+:root{
+    --fonte-principal: 'Instrument Sans', sans-serif;
+    --branco: #ffffff;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --background: linear-gradient(97.54deg, #c6c6c6, #6f6d6d);
+    --cinza-escuro: #000000;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-form {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-form h2 {
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .button-group {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .button-group button {
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .links {
+    text-align: center;
+  }
+  
+  .links a {
+    margin-right: 10px;
+    color: #337ab7;
+  }
+  

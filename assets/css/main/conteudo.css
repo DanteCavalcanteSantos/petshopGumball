@@ -1,4 +1,9 @@
 
+
+:root{
+    --cinza-escuro: rgb(169, 169, 169);
+}
+
 /*Logo ocultado para mobile*/
 .logo_marca{
     display: none;
@@ -14,19 +19,19 @@
 }
 
 .maintitle{
-    color: var(--branco);
+    color: var(--cinza-escuro);
     font-size: 2.5em;
 }
 
 .maintitle_line{
-    color: var(--branco);
+    color: var(--cinza-escuro);
     font-size: 1.5em;
 }
 
 /*Estilo carrossel banner*/
 
 .carrossel{
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 
@@ -62,7 +67,7 @@
 }
 
 .infoGumball_title{
-    color: var(--branco);
+    color: var(--cinza-escuro);
     margin: 20px;
     font-size: 32px;
 }
@@ -80,7 +85,7 @@
 }
 
 .infoGumball_tex{
-    color: var(--branco);
+    color: var(--cinza-escuro);
     font-size: 20px;
     margin: 15px;
 }
@@ -98,7 +103,7 @@
 .infoVideo_title{
     margin-bottom: 1.5em;
     font-size: 30px;
-    color: var(--branco);
+    color: var(--cinza-escuro);
 }
 
 .infoVideo__Video{
@@ -137,7 +142,18 @@
         font-size: 35px;
     }
 
+    .carrossel{
+        margin: 2em 0em;
+        padding: 0px;
+    }
+
+    .swiper-wrapper{
+        margin: 2em 0;
+        height: 50%;
+    }
+
     .swiper{
+        height:75%;
         width: 100%;
     }
 
@@ -149,13 +165,99 @@
     .swiper-slide {
         height: 100vh;
     }
+    .infoGumball_title, .infoVideo_title{
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
     .infoGumball_img{
         width: 50%;
+        margin: 2em 0em;
     }
+
+    .infoGumball_tex{
+        font-size: 30px;
+        text-align: center;
+        margin: 15px 5%;
+    }
+   
+    .infoVideo1{
+      margin: 30px 0px;
+      text-align: center;
+    }
+
 
 }
 
 /* Estilos para desktops médios e grandes */
 @media (min-width: 1200px) {
+    .webHeader_logo{
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
 
-}
+    .logo_marca{
+        display: block;
+        width: 40em;
+        margin: 50px 10em;
+    }
+  
+      .title {
+        margin: 5em 2.5em;
+        font-size: 2em;
+      }
+
+      .swiper{
+        width: 100%;
+        height: 80em;
+        margin: 5em 0em;
+      }
+
+      .infoGumball_title{
+        font-size: 2.5em;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .container{
+        display: flex;
+        align-items: center;
+        margin: 2.5em 10em;
+        justify-content: space-around;
+      }
+      .container_discricao{
+        margin: 5em 0em;
+      }
+      .infoGumball_img{
+        width: 35em;
+        flex: 0 0  auto;
+      }
+      .infoGumball_tex{
+        font-size: 2.5em;
+        text-align: center;
+        margin: 40px 0px;
+        flex: 1;
+      }
+      
+  
+
+      .infoVideo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .infoVideo_title{
+        margin: 2.5em 5em;
+        font-size: 3em;
+      }
+
+      .infoVideo__Video{
+        width: 75em;
+        height: 50em;
+        margin: 20px 15px;
+      }
+
+    }

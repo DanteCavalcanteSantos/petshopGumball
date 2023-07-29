@@ -5,11 +5,13 @@
 :root{
     --fonte-principal: 'Instrument Sans', sans-serif;
     --branco: #ffffff;
-    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%)
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --background: linear-gradient(97.54deg, #c6c6c6, #6f6d6d);
+    --cinza-escuro: #000000;
 }
 
-.webSubstance{
-    background: #c6c6c6;
+.webSubstance, .webLogin, .webCadastro{
+    background: var(--background);
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: var(--fonte-principal);
@@ -17,4 +19,7 @@
     padding: 0;
 }
 
+.login-form{
+    background-color: #c6c6c6;
+}
 

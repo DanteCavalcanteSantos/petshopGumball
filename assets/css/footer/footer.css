@@ -1,6 +1,6 @@
 /* Estilo geral do footer */
 .webFooter {
-    background-color: #c6c6c6;
+    background-color: var(--background);
     padding: 20px;
   }
   
@@ -8,29 +8,31 @@
   .footer_title {
     text-align: center;
     margin-bottom: 20px;
-    color: white;
+    color: var(--cinza-escuro);
     font-size: 2em;
   }
   
   /* Estilo dos dados de contato */
-  .contact_ul {
-    color: white;
-    font-size: 20px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .contact_data:nth-child(1){
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-  }
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_ul{
+  margin: 20px 0px;
+  padding: 15px 0px;
+}
 
-  .contact_data {
-    margin-bottom: 10px;
-  }
-  
+.contact_data:first-child{
+  font-weight: bold;
+  font-size: 32px;
+  margin: 20px 0px;
+}
+.contact_data{
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
   /* Estilo da seção de newsletter */
   .footer_newsletter {
     text-align: center;
@@ -39,17 +41,20 @@
   
   .footer_newsletter-title {
     margin-bottom: 20px;
-    color: white;
+    color: var(--cinza-escuro);
     font-size: 2em;
+  
     font-weight: bold;
   }
 
   #emailData{
     border-radius: 5px;
+    margin: 15px 0px;
+    padding: 4px 15px;
   }
   
   label{
-    color: white;
+    color: var(--cinza-escuro);
     font-weight: bold;
     margin: 5px 5px;
     font-size: 20px;
@@ -73,5 +78,29 @@
   
   .socialMedias_img {
     width: 40px;
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    .footer__title {
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .footer_newsletter{
+     display: flex;
+     flex-direction: row; 
+    }
+  
+    .footer_newsletter-title {
+      margin: 15px 0px;
+      font-size: 1.5em;
+    }
+  
+    .socialMedias_img {
+      width: 5em;
+    }
+    
   }
   

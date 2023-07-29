@@ -4,22 +4,20 @@
     --branco: #ffffff;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%)
     --fonte-principal: 'Instrument Sans', sans-serif;
+    --cinza-escuro: rgb(169, 169, 169);
 }
 
 .webHeader{
     display: flex;
-    background-color: var(--branco);
+    background-color: #c6c6c6;
     justify-content: space-between;
     margin: 0;
     height: 5em;
 }
 
-
 .container__imagem{
     padding: 1em;
 }
-
-
 
 .webHeader_Menu{
     margin-right: auto;
@@ -42,7 +40,7 @@
 }
 
 .webHeader_input:checked~.webHeader_label{
-    background: var(--azul-degrade);
+    background: var(#000000);
 } 
 
 
@@ -63,15 +61,22 @@
 }
 
 .webIcons_img{
-    width: 2.5em;
+    width: 2em;
+    transition: 0.5s;
 }
+
+.webIcons_img:hover{
+    width: 3.5em;
+}
+
+
 
 .webHeader_ul{
     position: absolute;
     top: 5em;
     left: 0em;
     display: none;
-    background-color: var(--branco);
+    background-color: var(--cinza-escuro);
     z-index: 2;
 }
 
@@ -87,13 +92,13 @@
 
 .webHeader_li{
     padding: 1em;
-    background-color: var(--branco);
+    background-color: var(--azul-degrade);
 }
 
 .webHeader_a{
     background-clip: text;
-    background: var(--azul-degrade);
-    color: #0b026e;
+    background: var(--branco);
+    color: white;
     font-size: 1.5em;
     text-decoration: none;
     text-transform: uppercase;
@@ -103,12 +108,16 @@
 
 
 
-/* Estilos para desktops pequenos */
-@media (min-width: 1024px) and (max-width: 1199px) {
- 
-}
-
 /* Estilos para desktops médios e grandes */
 @media (min-width: 1200px) {
+    .webHeader{
+        height: 5em;
+    }
 
+    .webIcons_a{
+        margin: 5px 15px;
+    }
+    .webIcons_img{
+        width: 3em;
+    }
 }
